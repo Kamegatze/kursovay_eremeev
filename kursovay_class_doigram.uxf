@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.1">
-  <zoom_level>7</zoom_level>
+  <zoom_level>9</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>91</x>
-      <y>189</y>
-      <w>112</w>
-      <h>126</h>
+      <x>99</x>
+      <y>243</y>
+      <w>144</w>
+      <h>162</h>
     </coordinates>
     <panel_attributes>StudentLaggards
 --
@@ -25,10 +25,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>133</x>
-      <y>308</y>
-      <w>21</w>
-      <h>70</h>
+      <x>153</x>
+      <y>396</y>
+      <w>27</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
@@ -36,10 +36,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>84</x>
-      <y>364</y>
-      <w>336</w>
-      <h>77</h>
+      <x>90</x>
+      <y>468</y>
+      <w>432</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>StudentLaggardsSearch
 --
@@ -53,10 +53,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>224</x>
-      <y>189</y>
-      <w>168</w>
-      <h>126</h>
+      <x>270</x>
+      <y>243</y>
+      <w>216</w>
+      <h>162</h>
     </coordinates>
     <panel_attributes>LaggardsStudentsController
 --
@@ -71,10 +71,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>294</x>
-      <y>308</y>
-      <w>21</w>
-      <h>70</h>
+      <x>360</x>
+      <y>396</y>
+      <w>27</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
@@ -82,10 +82,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>777</x>
-      <y>168</y>
-      <w>168</w>
-      <h>126</h>
+      <x>1143</x>
+      <y>189</y>
+      <w>216</w>
+      <h>162</h>
     </coordinates>
     <panel_attributes>ResultAfterLearningController
 --
@@ -101,10 +101,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>784</x>
-      <y>385</y>
-      <w>217</w>
-      <h>126</h>
+      <x>1152</x>
+      <y>468</y>
+      <w>279</w>
+      <h>162</h>
     </coordinates>
     <panel_attributes>StudentAfterLearningML
 --
@@ -120,10 +120,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>882</x>
-      <y>287</y>
-      <w>21</w>
-      <h>112</h>
+      <x>1278</x>
+      <y>342</y>
+      <w>27</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
@@ -131,10 +131,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>497</x>
-      <y>196</y>
-      <w>168</w>
-      <h>126</h>
+      <x>630</x>
+      <y>180</y>
+      <w>216</w>
+      <h>162</h>
     </coordinates>
     <panel_attributes>Excel
 --
