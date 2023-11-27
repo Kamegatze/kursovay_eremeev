@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>91</x>
+      <y>189</y>
+      <w>112</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>StudentLaggards
+--
++student_name
++nomer_zachetki
++discipline
++prepodavateli
++kafedra
++valuation
++max_valuation
++PB
++type_valuation_name</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>133</x>
+      <y>308</y>
+      <w>21</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>84</x>
+      <y>364</y>
+      <w>336</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>StudentLaggardsSearch
+--
+
+--
++get_laggards_students_by_control_of_week(control_week: string)
++get_student_with_performance(param: array)
++processPB()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>224</x>
+      <y>189</y>
+      <w>168</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>LaggardsStudentsController
+--
+
+--
++actionIndex()
++actionGetFileExcelLaggards()
++actionGetFileExcelStatistics()
++actionStatistics()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>294</x>
+      <y>308</y>
+      <w>21</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>777</x>
+      <y>168</y>
+      <w>168</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>ResultAfterLearningController
+--
+
+--
++actionIndex()
++actionChartPerformance()
++actionBlackList()
++actionRedList()
++actionDownloadPrediction()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>784</x>
+      <y>385</y>
+      <w>217</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>StudentAfterLearningML
+--
+
+--
++search(param:array, typeStudent: string)
+-updateDataForBlackList(data: array)
+-updateDataForRedList(data: array)
+-additionStudentInRedList(ids: array)
+-additionStudentInBlackList(ids: array)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>882</x>
+      <y>287</y>
+      <w>21</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>497</x>
+      <y>196</y>
+      <w>168</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>Excel
+--
+
+--
++export_to_excel()
+#new_row(cell: string)
+#row_step(cell: string)
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
