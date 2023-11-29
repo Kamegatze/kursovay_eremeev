@@ -382,10 +382,10 @@ _студентов_</panel_attributes>
       <x>588</x>
       <y>420</y>
       <w>18</w>
-      <h>72</h>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -393,10 +393,10 @@ _студентов_</panel_attributes>
       <x>432</x>
       <y>456</y>
       <w>18</w>
-      <h>42</h>
+      <h>234</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;370.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
