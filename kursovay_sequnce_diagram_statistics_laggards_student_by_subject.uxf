@@ -4,19 +4,20 @@
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>242</x>
-      <y>22</y>
-      <w>66</w>
-      <h>121</h>
+      <x>88</x>
+      <y>77</y>
+      <w>88</w>
+      <h>132</h>
     </coordinates>
-    <panel_attributes>Actor</panel_attributes>
+    <panel_attributes>Работник 
+деканата</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>396</x>
-      <y>22</y>
+      <x>275</x>
+      <y>88</y>
       <w>110</w>
       <h>66</h>
     </coordinates>
@@ -28,8 +29,8 @@ _предметов_</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>572</x>
-      <y>22</y>
+      <x>429</x>
+      <y>88</y>
       <w>110</w>
       <h>66</h>
     </coordinates>
@@ -41,8 +42,8 @@ _данных_</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>748</x>
-      <y>22</y>
+      <x>627</x>
+      <y>88</y>
       <w>110</w>
       <h>33</h>
     </coordinates>
@@ -52,19 +53,19 @@ _данных_</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>440</x>
-      <y>77</y>
+      <x>319</x>
+      <y>132</y>
       <w>33</w>
-      <h>187</h>
+      <h>198</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;150.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;160.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>264</x>
-      <y>121</y>
+      <x>121</x>
+      <y>187</y>
       <w>33</w>
       <h>77</h>
     </coordinates>
@@ -74,8 +75,8 @@ _данных_</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>264</x>
-      <y>176</y>
+      <x>121</x>
+      <y>242</y>
       <w>22</w>
       <h>66</h>
     </coordinates>
@@ -85,24 +86,24 @@ _данных_</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>264</x>
-      <y>220</y>
-      <w>209</w>
-      <h>110</h>
+      <x>121</x>
+      <y>286</y>
+      <w>231</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-Запрос на получе-
+1. Запрос на получе-
 ние данных по
 контрольной неде-
 ли
 </panel_attributes>
-    <additional_attributes>170.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>190.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>616</x>
-      <y>77</y>
+      <x>473</x>
+      <y>143</y>
       <w>33</w>
       <h>187</h>
     </coordinates>
@@ -112,8 +113,8 @@ _данных_</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>792</x>
-      <y>44</y>
+      <x>671</x>
+      <y>110</y>
       <w>33</w>
       <h>220</h>
     </coordinates>
@@ -123,19 +124,19 @@ _данных_</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>440</x>
-      <y>220</y>
-      <w>209</w>
+      <x>319</x>
+      <y>286</y>
+      <w>187</w>
       <h>44</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;150.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>792</x>
-      <y>242</y>
+      <x>671</x>
+      <y>308</y>
       <w>22</w>
       <h>88</h>
     </coordinates>
@@ -145,8 +146,8 @@ _данных_</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>264</x>
-      <y>231</y>
+      <x>121</x>
+      <y>297</y>
       <w>33</w>
       <h>187</h>
     </coordinates>
@@ -156,8 +157,8 @@ _данных_</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>440</x>
-      <y>231</y>
+      <x>319</x>
+      <y>297</y>
       <w>33</w>
       <h>187</h>
     </coordinates>
@@ -167,8 +168,8 @@ _данных_</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>616</x>
-      <y>231</y>
+      <x>473</x>
+      <y>297</y>
       <w>33</w>
       <h>121</h>
     </coordinates>
@@ -178,21 +179,21 @@ _данных_</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>627</x>
-      <y>308</y>
-      <w>198</w>
+      <x>484</x>
+      <y>374</y>
+      <w>220</w>
       <h>55</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-Получение даннх
+3. Получение даннх
 от баз даннх</panel_attributes>
-    <additional_attributes>10.0;20.0;160.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;180.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>616</x>
-      <y>330</y>
+      <x>473</x>
+      <y>396</y>
       <w>22</w>
       <h>66</h>
     </coordinates>
@@ -202,34 +203,34 @@ _данных_</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>616</x>
-      <y>220</y>
-      <w>198</w>
+      <x>473</x>
+      <y>286</y>
+      <w>220</w>
       <h>66</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-SQL запрос
+2. SQL запрос
 на получение 
 данных</panel_attributes>
-    <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>180.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>264</x>
-      <y>374</y>
+      <x>121</x>
+      <y>440</y>
       <w>209</w>
       <h>44</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-Ответ</panel_attributes>
+4. Ответ</panel_attributes>
     <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>440</x>
-      <y>374</y>
+      <x>297</x>
+      <y>440</y>
       <w>209</w>
       <h>44</h>
     </coordinates>

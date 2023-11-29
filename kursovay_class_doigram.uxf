@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.1">
-  <zoom_level>7</zoom_level>
+  <zoom_level>3</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>91</x>
-      <y>189</y>
-      <w>112</w>
-      <h>126</h>
+      <x>48</x>
+      <y>354</y>
+      <w>48</w>
+      <h>54</h>
     </coordinates>
     <panel_attributes>StudentLaggards
 --
@@ -25,10 +25,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>133</x>
-      <y>308</y>
-      <w>21</w>
-      <h>70</h>
+      <x>66</x>
+      <y>405</y>
+      <w>9</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
@@ -36,10 +36,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>84</x>
-      <y>364</y>
-      <w>336</w>
-      <h>77</h>
+      <x>45</x>
+      <y>429</y>
+      <w>144</w>
+      <h>33</h>
     </coordinates>
     <panel_attributes>StudentLaggardsSearch
 --
@@ -53,10 +53,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>224</x>
-      <y>189</y>
-      <w>168</w>
-      <h>126</h>
+      <x>105</x>
+      <y>354</y>
+      <w>72</w>
+      <h>54</h>
     </coordinates>
     <panel_attributes>LaggardsStudentsController
 --
@@ -71,21 +71,21 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>294</x>
-      <y>308</y>
-      <w>21</w>
-      <h>70</h>
+      <x>135</x>
+      <y>366</y>
+      <w>66</w>
+      <h>69</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+    <additional_attributes>140.0;10.0;200.0;10.0;200.0;170.0;10.0;170.0;10.0;210.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>777</x>
-      <y>168</y>
-      <w>168</w>
-      <h>126</h>
+      <x>741</x>
+      <y>336</y>
+      <w>72</w>
+      <h>54</h>
     </coordinates>
     <panel_attributes>ResultAfterLearningController
 --
@@ -101,50 +101,440 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>784</x>
-      <y>385</y>
-      <w>217</w>
-      <h>126</h>
+      <x>735</x>
+      <y>423</y>
+      <w>138</w>
+      <h>54</h>
     </coordinates>
     <panel_attributes>StudentAfterLearningML
 --
 
 --
-+search(param:array, typeStudent: string)
--updateDataForBlackList(data: array)
--updateDataForRedList(data: array)
--additionStudentInRedList(ids: array)
--additionStudentInBlackList(ids: array)</panel_attributes>
++search(array param, string typeStudent, SendData sendData)
+-updateDataForBlackList(array data)
+-updateDataForRedList(array data)
+-additionStudentInRedList(array ids)
+-additionStudentInBlackList(array ids)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>882</x>
-      <y>287</y>
-      <w>21</w>
-      <h>112</h>
+      <x>777</x>
+      <y>387</y>
+      <w>9</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>497</x>
-      <y>196</y>
-      <w>168</w>
-      <h>126</h>
+      <x>426</x>
+      <y>432</y>
+      <w>72</w>
+      <h>33</h>
     </coordinates>
     <panel_attributes>Excel
 --
 
 --
-+export_to_excel()
++export_to_excel(): string
 #new_row(cell: string)
 #row_step(cell: string)
 
 </panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>426</x>
+      <y>486</y>
+      <w>72</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>ExcelControlWeek
+--
+
+-config:ExcelControlWeekConfig
+
+--
++export_to_excel(): string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>459</x>
+      <y>462</y>
+      <w>9</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>543</y>
+      <w>81</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>ExcelControlWeekConfig
+--
+
+-style:array
+-fileds:array
+-border:array
+-background:array
+-name_fields_of_group:string
+-groups:array
+-students:array
+-type_valuation_name:string
+-name_file:string
+
+--
+
++builder(): ExcelControlWeekConfig</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>498</y>
+      <w>69</w>
+      <h>51</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;10.0;10.0;110.0;210.0;110.0;210.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>567</x>
+      <y>492</y>
+      <w>84</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>ExcelControlWeekBuilder
+--
+
+-config:ExcelControlWeekConfig
+
+--
++build(): ExcelControlWeekBuilder
++builder(): ExcelControlWeekConfig</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>456</x>
+      <y>504</y>
+      <w>117</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>370.0;10.0;290.0;10.0;290.0;90.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>570</x>
+      <y>549</y>
+      <w>84</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>ExcelStatisticsBuilder
+--
+
+-config:ExcelControlWeekConfig
+
+--
++build(): ExcelStatisticsBuilder
++builder(): ExcelControlWeekConfig</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>570</x>
+      <y>606</y>
+      <w>84</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>ExcelPredictionBuilder
+--
+
+-config:ExcelControlWeekConfig
+
+--
++build(): ExcelPredictionBuilder
++builder(): ExcelControlWeekConfig</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>528</y>
+      <w>36</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>100.0;120.0;10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>561</y>
+      <w>36</w>
+      <h>69</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>100.0;210.0;10.0;210.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>372</x>
+      <y>411</y>
+      <w>330</w>
+      <h>249</h>
+    </coordinates>
+    <panel_attributes>lt=.
+Экпорт таблицы в
+excel файл</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>27</x>
+      <y>267</y>
+      <w>303</w>
+      <h>225</h>
+    </coordinates>
+    <panel_attributes>lt=.
+Формирование таблицы
+неуспевающих студентов
+по контрольной недели</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>720</x>
+      <y>297</y>
+      <w>456</w>
+      <h>204</h>
+    </coordinates>
+    <panel_attributes>lt=.
+Формирование таблицы
+прогноза студентов на следующий
+семестр
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>954</x>
+      <y>333</y>
+      <w>117</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>SendData
+--
+
+--
+
++send(BuilderConfigSend configBuilder, array body)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>954</x>
+      <y>360</y>
+      <w>66</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>200.0;10.0;200.0;60.0;10.0;60.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>903</x>
+      <y>390</y>
+      <w>114</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>SendDataOnServer
+--
+
+--
++send(BuilderConfigSend configBuilder, array body)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1032</x>
+      <y>390</y>
+      <w>114</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>SendDataOnShellScript
+--
+
+--
++send(BuilderConfigSend configBuilder, array body)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1011</x>
+      <y>375</y>
+      <w>81</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;250.0;10.0;250.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>810</x>
+      <y>321</y>
+      <w>207</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;80.0;80.0;80.0;80.0;10.0;670.0;10.0;670.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>936</x>
+      <y>444</y>
+      <w>120</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>BuilderConfigSend
+--
+
+--
++getPythonInterpreterPath()
++getExecuteFilePath()
++getSendDataFromPhpOrUrlSendData()
++getSendDataFromPython()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>870</x>
+      <y>429</y>
+      <w>135</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;430.0;10.0;430.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>216</x>
+      <y>324</y>
+      <w>99</w>
+      <h>57</h>
+    </coordinates>
+    <panel_attributes>Statistics
+--
+
++prepodavateli
++discipline
++group
++count_students
++type_valuation_name
+
+--
+
++get_count_laggards_students(array params)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>174</x>
+      <y>312</y>
+      <w>102</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;250.0;40.0;250.0;40.0;10.0;320.0;10.0;320.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>174</x>
+      <y>372</y>
+      <w>444</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0;90.0;40.0;1460.0;40.0;1460.0;400.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>174</x>
+      <y>378</y>
+      <w>492</w>
+      <h>177</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;10.0;80.0;40.0;1620.0;40.0;1620.0;540.0;1450.0;540.0;1450.0;570.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>174</x>
+      <y>393</y>
+      <w>276</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;630.0;10.0;630.0;280.0;900.0;280.0;900.0;310.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>606</x>
+      <y>369</y>
+      <w>141</w>
+      <h>243</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>450.0;10.0;200.0;10.0;200.0;770.0;10.0;770.0;10.0;790.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>345</x>
+      <y>366</y>
+      <w>327</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>1070.0;20.0;10.0;20.0;10.0;100.0</additional_attributes>
   </element>
 </diagram>
